@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invitación 15 Años - María José</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Playfair Display', serif;
+      background: linear-gradient(to bottom, #fdfcfb, #e2d1c3);
+      color: #333;
+      text-align: center;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      animation: fadeIn 2s ease-in;
+    }
+    h1 {
+      font-size: 2.5rem;
+      color: #8a4e3b;
+    }
+    h2 {
+      font-size: 1.2rem;
+      margin: 1rem 0;
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 1.2rem;
+    }
+    a.button {
+      display: inline-block;
+      padding: 0.7rem 1.5rem;
+      margin-top: 1rem;
+      background: #8a4e3b;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: background 0.3s;
+    }
+    a.button:hover {
+      background: #6f3f31;
+    }
+    form {
+      margin-top: 2rem;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 0.5rem;
+      margin: 0.5rem 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(-20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+    audio {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="https://www.bensound.com/bensound-music/bensound-sweet.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+  <div class="container">
+    <h1>¡Mis 15 Años!</h1>
+    <h2>María José Ordoñez Osorio</h2>
+    <p>Con mucho amor, quiero invitar cordialmente a:</p>
+    <p><strong>Yamir Ordoñez y Esposa</strong></p>
+    <p>A celebrar una noche inolvidable llena de alegría, amor y elegancia.</p>
+    <p><strong>📅 Fecha:</strong> 2 de diciembre de 2025</p>
+    <p><strong>🕘 Hora:</strong> 9:00 PM</p>
+    <p><strong>📍 Lugar:</strong> Calle 10 No.3-26, Popayán</p>
+    <a class="button" href="https://www.google.com/maps?q=Calle+10+No.3-26,+Popay%C3%A1n" target="_blank">Ver Ubicación</a>
+
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <h3>💌 Deja un mensaje para María José:</h3>
+      <input type="text" name="nombre" placeholder="Tu nombre" required>
+      <textarea name="mensaje" placeholder="Tu mensaje..." rows="4" required></textarea>
+      <button type="submit" class="button">Enviar Mensaje</button>
+    </form>
+  </div>
+</body>
+</html>
